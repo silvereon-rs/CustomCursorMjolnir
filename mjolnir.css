@@ -1,0 +1,30 @@
+.png:hover {
+    cursor: url('file:///C:/Users/rajat/OneDrive/Desktop/hello/unnamed.png'),auto;
+}
+
+.png:active {
+  cursor: url("file:///C:/Users/rajat/OneDrive/Desktop/hello/cursor.png"),auto;
+}
+
+.cursors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.cursors > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 2px;
+  text-align: center;  
+  &:nth-child(odd) {
+    background: #eee;     
+   }
+  &:hover {
+    opacity: 0.25
+  }
+}
